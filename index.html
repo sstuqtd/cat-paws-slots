@@ -8,7 +8,7 @@
 </head>
 <body>
   <main class="app-shell">
-    <header class="topbar"><div class="brand"><div class="brand-mark">🐾</div><div><div class="brand-name">猫爪漫游</div><div class="brand-sub">PAWS ACROSS WORLDS</div></div></div><div class="top-actions"><select id="languageSelect" class="language-select" aria-label="Language"><option value="zh">简体中文</option><option value="zh-TW">繁體中文</option><option value="en">English</option><option value="fr">Français</option><option value="es">Español</option><option value="ko">한국어</option><option value="ar">العربية</option><option value="ja">日本語</option></select><button class="icon-btn sound-on" id="soundBtn" aria-label="切换音效">♫</button></div></header>
+    <header class="topbar"><div class="brand"><button class="avatar-button" id="avatarButton" aria-label="选择头像"><span id="playerAvatar">🐱</span><i>✎</i></button><div><div class="brand-name">猫爪漫游</div><div class="brand-sub">PAWS ACROSS WORLDS</div></div></div><div class="top-actions"><select id="languageSelect" class="language-select" aria-label="Language"><option value="zh">简体中文</option><option value="zh-TW">繁體中文</option><option value="en">English</option><option value="fr">Français</option><option value="es">Español</option><option value="ko">한국어</option><option value="ar">العربية</option><option value="ja">日本語</option></select><button class="icon-btn sound-on" id="soundBtn" aria-label="切换音效">♫</button></div></header>
     <section class="hero-card"><div class="hero-copy"><span class="eyebrow" data-i18n="weeklyWorld">本周跨界世界</span><h1 id="worldTitle">月球喵喵站</h1><p id="worldDesc">戴上宇航头盔，收集星星鱼干！</p><div class="world-dots"><i class="active"></i><i></i><i></i><i></i></div></div><div class="hero-cat" aria-hidden="true">🐱‍🚀</div><div class="planet planet-a"></div><div class="planet planet-b"></div></section>
     <section class="stats"><div><span class="stat-icon">🪙</span><b id="coinCount">120</b><small data-i18n="fishCoins">鱼币</small></div><div><span class="stat-icon">⭐</span><b id="starCount">0</b><small data-i18n="stars">星星</small></div><button id="dailyBtn" class="daily-btn">🎁 每日礼物</button></section>
     <nav class="tabs"><button class="tab active" data-tab="match">🐾 三消冒险</button><button class="tab" data-tab="slots">🎰 幸运喵喵</button></nav>
@@ -28,5 +28,6 @@
     <footer><button id="installBtn" class="install-btn hidden">⬇ <span data-i18n="install">安装游戏</span></button><span id="installHint" class="install-hint"></span><div class="footer-copy">一爪跨界，快乐连连 ✦ <span>DEMO · 进度保存在本机</span></div></footer>
   </main>
   <div id="modal" class="modal hidden"><div class="modal-card"><div id="modalEmoji">🎉</div><h2 id="modalTitle">太棒了！</h2><p id="modalText"></p><button id="modalClose" class="spin-btn">继续冒险</button></div></div>
+  <div id="avatarModal" class="modal hidden"><div class="modal-card avatar-card"><button id="avatarClose" class="avatar-close" aria-label="Close">×</button><div class="avatar-heading">🐾</div><h2 id="avatarTitle">选择头像</h2><p id="avatarDescription">选择你的跨界旅伴</p><div id="avatarGrid" class="avatar-grid"></div></div></div>
   <script src="i18n.js"></script><script src="game.js"></script>
 </body></html>
